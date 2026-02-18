@@ -27,6 +27,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -318,6 +327,17 @@ body {
 .snippet-note {
   color: var(--text-muted);
   font-size: 0.85rem;
+}
+
+.snippet-note a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.snippet-note a:hover {
+  border-bottom-color: var(--accent);
 }
 
 /* ─── Coming Soon ─── */
