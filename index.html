@@ -3,46 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Command Central — Know what changed in your codebase while you were away</title>
-  <meta name="description" content="A VS Code extension that organizes your git changes by time. See what happened today, yesterday, and last week — at a glance.">
-  <meta property="og:title" content="Command Central — See what changed, organized by time">
-  <meta property="og:description" content="A VS Code extension that organizes your git changes by time. Free and open source.">
+  <title>Command Central — Git changes, organized by time</title>
+  <meta name="description" content="A VS Code extension that groups git changes by time — Today, Yesterday, Last Week. Free, open source, zero config.">
+  <meta property="og:title" content="Command Central — Git changes, organized by time">
+  <meta property="og:description" content="Stop scrolling alphabetical file lists. See what changed today, yesterday, and last week.">
   <meta property="og:image" content="assets/hero-shot.png">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱️</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
   <link rel="stylesheet" href="style.css">
-  <!-- PostHog -->
   <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog&&window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing identify setPersonProperties group resetGroups reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted debug getFeatureFlag isFeatureEnabled onFeatureFlags reloadFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init('phc_Q17dJHthy7nLMODScwfo7kvbT6hO0SIkSpNpcFMXtTD', {
-      api_host: 'https://us.i.posthog.com',
-      person_profiles: 'identified_only',
-      autocapture: false
-    });
+    posthog.init('phc_Q17dJHthy7nLMODScwfo7kvbT6hO0SIkSpNpcFMXtTD',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only',autocapture:false});
   </script>
-  <!-- Custom event tracking -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Track CTA clicks
-      document.querySelectorAll('[data-track]').forEach(function(el) {
-        el.addEventListener('click', function() {
-          posthog.capture(el.dataset.track, {
-            source: el.dataset.source || 'landing',
-            label: el.textContent.trim()
-          });
-        });
+    document.addEventListener('DOMContentLoaded',function(){
+      document.querySelectorAll('[data-track]').forEach(function(el){
+        el.addEventListener('click',function(){posthog.capture(el.dataset.track,{source:el.dataset.source||'landing',label:el.textContent.trim()})})
       });
-      // Track scroll depth
-      var depths = [25, 50, 75, 100];
-      var fired = {};
-      window.addEventListener('scroll', function() {
-        var pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-        depths.forEach(function(d) {
-          if (pct >= d && !fired[d]) {
-            fired[d] = true;
-            posthog.capture('scroll_depth', { depth: d });
-          }
-        });
+      var depths=[25,50,75,100],fired={};
+      window.addEventListener('scroll',function(){
+        var pct=Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight))*100);
+        depths.forEach(function(d){if(pct>=d&&!fired[d]){fired[d]=true;posthog.capture('scroll_depth',{depth:d})}})
       });
     });
   </script>
@@ -53,17 +34,17 @@
   <section class="hero">
     <div class="container">
       <div class="hero-badge">Free &amp; open source</div>
-      <h1>AI edits 40 files.<br>You lose track after 3.</h1>
-      <p class="subtitle">Command Central organizes your git changes by time — Today, Yesterday, Last Week — so you always know what happened while you were away.</p>
+      <h1>Git changes, organized by time</h1>
+      <p class="subtitle">Today. Yesterday. Last week. Not alphabetical.</p>
       <div class="cta-group">
         <a href="https://marketplace.visualstudio.com/items?itemName=oste.command-central" class="btn btn-primary" data-track="install_click" data-source="hero">Install for VS Code</a>
-        <a href="https://github.com/ostehost/vs-code-extension" class="btn btn-secondary" data-track="github_click" data-source="hero">Source on GitHub</a>
+        <a href="https://github.com/ostehost/vs-code-extension" class="btn btn-secondary" data-track="github_click" data-source="hero">GitHub</a>
       </div>
       <div class="hero-screenshot">
-        <!-- PLACEHOLDER: Replace with tight crop of CC sidebar showing time-grouped tree -->
+        <!-- PLACEHOLDER: Tight crop of CC sidebar — time-grouped tree -->
         <div class="placeholder-img placeholder-hero">
           <div class="placeholder-label">Hero Screenshot</div>
-          <div class="placeholder-desc">CC sidebar: Today (7 files) · Yesterday (2 files) · February (3 files)<br>Tight crop — sidebar + thin slice of editor</div>
+          <div class="placeholder-desc">CC sidebar: Today (7 files) · Yesterday (2) · Last Week (3)</div>
         </div>
       </div>
     </div>
@@ -72,96 +53,89 @@
   <!-- Before / After -->
   <section class="before-after">
     <div class="container">
-      <h2>The problem is obvious once you see it</h2>
       <div class="comparison">
         <div class="comparison-panel">
-          <div class="comparison-label comparison-label--before">After a Copilot session</div>
-          <!-- PLACEHOLDER: VS Code Explorer, flat alphabetical list -->
+          <div class="comparison-label comparison-label--before">Without</div>
+          <!-- PLACEHOLDER: VS Code Explorer — flat alphabetical -->
           <div class="placeholder-img placeholder-compare">
-            <div class="placeholder-label">Before</div>
-            <div class="placeholder-desc">VS Code Explorer panel — 40+ files in flat alphabetical order. Wall of text. No context.</div>
+            <div class="placeholder-label">Default Explorer</div>
+            <div class="placeholder-desc">40 files. Alphabetical. No context.</div>
           </div>
         </div>
         <div class="comparison-panel">
           <div class="comparison-label comparison-label--after">With Command Central</div>
-          <!-- PLACEHOLDER: CC sidebar, same files grouped by time -->
+          <!-- PLACEHOLDER: CC sidebar — time-grouped -->
           <div class="placeholder-img placeholder-compare">
-            <div class="placeholder-label">After</div>
-            <div class="placeholder-desc">CC sidebar — same files grouped by Today / Yesterday / Last Week. Instant clarity.</div>
+            <div class="placeholder-label">Command Central</div>
+            <div class="placeholder-desc">Same files. Grouped by when they changed.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Feature Cards -->
+  <!-- Features — 3 cards, minimal -->
   <section class="features">
     <div class="container">
       <div class="features-grid">
         <div class="feature-card">
-          <div class="icon">📅</div>
-          <h3>Time Groups</h3>
-          <p>Files sorted by when they changed: Today, Yesterday, Last Week. Your changes organized the way you actually think about them.</p>
-        </div>
-        <div class="feature-card">
           <div class="icon">🔍</div>
-          <h3>Extension Filter</h3>
-          <p>Show only .ts files. Or .md. Or .yaml. One keystroke to cut through the noise and see just what matters.</p>
+          <h3>Filter by file type</h3>
+          <p>Show only <code>.ts</code>, <code>.md</code>, or <code>.yaml</code>. One keystroke.</p>
         </div>
         <div class="feature-card">
           <div class="icon">🔀</div>
-          <h3>Git-Aware Grouping</h3>
-          <p>Switch from time view to staged/unstaged view when you're ready to commit. Two ways to see the same changes.</p>
+          <h3>Switch to git view</h3>
+          <p>Time groups for context. Staged/unstaged for commits. Toggle between both.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📂</div>
+          <h3>10 workspaces</h3>
+          <p>Each folder gets its own panel, its own icon, its own change history.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Feature Walkthrough -->
+  <!-- Walkthrough — screenshots with short text -->
   <section class="walkthrough">
     <div class="container">
 
-      <!-- Extension Filter -->
       <div class="walkthrough-row">
         <div class="walkthrough-text">
-          <h3>40 files changed. You only care about TypeScript.</h3>
-          <p>The Extension Filter lets you slice your changes by file type. Working on the API? Show only <code>.ts</code>. Reviewing config changes? Filter to <code>.yaml</code> and <code>.json</code>. One click, instant focus.</p>
+          <h3>Extension Filter</h3>
+          <p>40 files changed. You care about TypeScript. Filter to <code>.ts</code> — everything else disappears.</p>
         </div>
         <div class="walkthrough-img">
-          <!-- PLACEHOLDER: CC sidebar filtered to .ts files only -->
           <div class="placeholder-img placeholder-walkthrough">
             <div class="placeholder-label">Extension Filter</div>
-            <div class="placeholder-desc">CC sidebar showing Extension Filter panel with .ts selected. Tree shows only TypeScript files.</div>
+            <div class="placeholder-desc">Sidebar filtered to .ts files only</div>
           </div>
         </div>
       </div>
 
-      <!-- Git Status Grouping -->
       <div class="walkthrough-row walkthrough-row--reverse">
         <div class="walkthrough-text">
-          <h3>Time view for context. Git view for commits.</h3>
-          <p>Grouping Options let you switch between sorting by time (when did this change?) and grouping by git status (what's staged vs unstaged?). Two lenses on the same codebase.</p>
+          <h3>Grouping Options</h3>
+          <p>Sort by time when you're catching up. Switch to git status when you're ready to commit.</p>
         </div>
         <div class="walkthrough-img">
-          <!-- PLACEHOLDER: CC sidebar in git status mode -->
           <div class="placeholder-img placeholder-walkthrough">
             <div class="placeholder-label">Git Status Grouping</div>
-            <div class="placeholder-desc">CC sidebar with Grouping Options showing "Git Status" selected. Tree shows Staged / Unstaged groups.</div>
+            <div class="placeholder-desc">Staged / Unstaged groups</div>
           </div>
         </div>
       </div>
 
-      <!-- Multi-Workspace -->
       <div class="walkthrough-row">
         <div class="walkthrough-text">
-          <h3>10 projects. Each with its own identity.</h3>
-          <p>Track up to 10 workspace folders, each with its own icon, its own change history, its own space. Custom emoji icons aren't just visual flair — they're how you tell your projects apart at a glance.</p>
+          <h3>Multi-workspace</h3>
+          <p>Custom emoji icons per project. Not just visual — they're how you tell 10 folders apart at a glance.</p>
         </div>
         <div class="walkthrough-img">
-          <!-- PLACEHOLDER: Multiple CC workspace panels with emoji icons -->
           <div class="placeholder-img placeholder-walkthrough">
             <div class="placeholder-label">Multi-Workspace</div>
-            <div class="placeholder-desc">CC sidebar showing 3 workspaces: 🚀 API Server, 🔧 Shared Lib, ⚡ Web App. Each with its own file tree.</div>
+            <div class="placeholder-desc">🚀 API · 🔧 Lib · ⚡ Web — each with its own tree</div>
           </div>
         </div>
       </div>
@@ -169,65 +143,64 @@
     </div>
   </section>
 
-  <!-- Compatibility -->
+  <!-- Compatibility — one line -->
   <section class="compatibility">
     <div class="container">
-      <p class="compat-text">Works with <strong>Cursor</strong>, <strong>Claude Code</strong>, <strong>GitHub Copilot</strong>, <strong>Windsurf</strong> — any AI coding tool. Sits in the Activity Bar, Panel, or Secondary Sidebar. No setup needed — if you have git, you're good.</p>
+      <p class="compat-text">Works with <strong>Cursor</strong>, <strong>Claude Code</strong>, <strong>Copilot</strong>, <strong>Windsurf</strong>. Zero config — install and go.</p>
     </div>
   </section>
 
-  <!-- Coming Next -->
+  <!-- Roadmap -->
   <section class="coming-soon">
     <div class="container">
-      <h2>What's coming next</h2>
+      <h2>What's next</h2>
       <div class="roadmap-grid">
         <div class="roadmap-card">
           <div class="roadmap-tag">v0.2.0</div>
           <h3>Live Mode</h3>
-          <p>Watch changes appear in real time as you (or your AI agent) work. "Just now" and "Last 5 min" time groups, plus a status bar summary.</p>
+          <p>Watch changes appear in real time. "Just now" and "Last 5 min" groups.</p>
         </div>
         <div class="roadmap-card">
           <div class="roadmap-tag">v0.3.0</div>
           <h3>Agent Awareness</h3>
-          <p>See which changes came from you and which came from an AI agent. Color-coded by git author, with conflict early warnings.</p>
+          <p>Your changes vs AI changes. Color-coded by author.</p>
         </div>
         <div class="roadmap-card">
           <div class="roadmap-tag">v0.4.0</div>
           <h3>Terminal Integration</h3>
-          <p>Launch project-specific terminals right from Command Central. Each project gets its own Dock icon, its own notification stream. Your workspace icon syncs across your entire workflow.</p>
+          <p>Per-project terminals with their own Dock icon and notification stream. Your workspace icon syncs across your whole workflow.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stay Connected -->
+  <!-- Email -->
   <section class="stay-connected">
     <div class="container">
       <h2>Stay in the loop</h2>
-      <p class="quiet-note">Get a short email when new versions ship. No spam, no cadence — just release notes when there's something worth sharing.</p>
+      <p class="quiet-note">Release notes only. No spam.</p>
       <div class="email-form">
         <form action="https://buttondown.com/api/emails/embed-subscribe/ostehost" method="post" target="popupwindow" class="signup-form">
           <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
-          <button type="submit" class="btn btn-primary" data-track="email_submit" data-source="footer">Notify me when v0.2.0 drops</button>
+          <button type="submit" class="btn btn-primary" data-track="email_submit" data-source="footer">Notify me</button>
         </form>
-        <p class="form-note">Or just <a href="https://github.com/ostehost/vs-code-extension" data-track="github_click" data-source="email-section">watch the repo</a> — GitHub will notify you on new releases too.</p>
+        <p class="form-note">Or <a href="https://github.com/ostehost/vs-code-extension" data-track="github_click" data-source="email-section">star the repo</a> for release notifications.</p>
       </div>
     </div>
   </section>
 
-  <!-- Quiet CTA -->
+  <!-- Footer CTA -->
   <section class="quiet-cta">
     <div class="container">
-      <p>Free, MIT licensed, 640 tests passing. <a href="https://marketplace.visualstudio.com/items?itemName=oste.command-central" data-track="install_click" data-source="footer">Give it a try.</a></p>
+      <p>MIT licensed. 640 tests. <a href="https://marketplace.visualstudio.com/items?itemName=oste.command-central" data-track="install_click" data-source="footer">Give it a try.</a></p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      Built by <a href="https://github.com/ostehost">ostehost</a>
-      <span>·</span> MIT License
-      <span>·</span> <a href="https://github.com/ostehost/vs-code-extension">GitHub</a>
+      <a href="https://github.com/ostehost">ostehost</a>
+      <span>·</span> <a href="https://github.com/ostehost/vs-code-extension">Source</a>
+      <span>·</span> MIT
     </div>
   </footer>
 
