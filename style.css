@@ -165,27 +165,112 @@ a:hover {
     0 0 120px rgba(88, 166, 255, 0.06);
 }
 
-/* ─── Trust Strip ─── */
-.trust-strip {
-  padding: 24px 0;
-  text-align: center;
+/* ─── Trust & Compatibility (unified) ─── */
+.trust-compat {
+  padding: 56px 0;
   border-top: 1px solid var(--border);
 }
 
-.trust-items {
+.trust-compat-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.compat-row {
+  margin-bottom: 28px;
+}
+
+.compat-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.compat-pills {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
   flex-wrap: wrap;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text-muted);
-  letter-spacing: 0.3px;
+  gap: 10px;
 }
 
-.trust-dot {
-  color: var(--border);
+.compat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.compat-pill:hover {
+  border-color: rgba(88, 166, 255, 0.25);
+  background: rgba(88, 166, 255, 0.06);
+}
+
+.compat-pill svg {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.trust-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+
+.trust-divider span {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.trust-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.trust-signal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.trust-number {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  letter-spacing: -0.3px;
+}
+
+.trust-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .trust-compat { padding: 40px 0; }
+  .compat-pills { gap: 8px; }
+  .compat-pill { padding: 6px 12px; font-size: 0.8rem; }
+  .trust-row { gap: 32px; }
+  .trust-number { font-size: 1rem; }
 }
 
 /* ─── Before / After ─── */
@@ -352,24 +437,7 @@ a:hover {
 }
 
 /* ─── Compatibility ─── */
-.compatibility {
-  padding: 48px 0;
-  text-align: center;
-  border-top: 1px solid var(--border);
-}
-
-.compat-text {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-
-.compat-text strong {
-  color: var(--text);
-  font-weight: 500;
-}
+/* old .compatibility styles removed — now in .trust-compat */
 
 /* ─── Install Snippet ─── */
 .install-snippet {
