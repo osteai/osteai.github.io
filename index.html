@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Command Central — Know what changed in your codebase while you were away</title>
+  <meta name="description" content="A VS Code extension that organizes your git changes by time. See what happened today, yesterday, and last week — at a glance.">
+  <meta property="og:title" content="Command Central — See what changed, organized by time">
+  <meta property="og:description" content="A VS Code extension that organizes your git changes by time. Free and open source.">
+  <meta property="og:image" content="assets/hero-shot.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <!-- PostHog -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog&&window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing identify setPersonProperties group resetGroups reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted debug getFeatureFlag isFeatureEnabled onFeatureFlags reloadFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_Q17dJHthy7nLMODScwfo7kvbT6hO0SIkSpNpcFMXtTD', {
+      api_host: 'https://us.i.posthog.com',
+      person_profiles: 'identified_only',
+      autocapture: false
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">Free &amp; open source</div>
+      <h1>See what changed in your codebase,<br>organized by time</h1>
+      <p class="subtitle">A VS Code extension that groups your git changes into Today, Yesterday, and Last Week — instead of an alphabetical wall of files.</p>
+      <div class="cta-group">
+        <a href="https://marketplace.visualstudio.com/items?itemName=oste.command-central" class="btn btn-primary">Install for VS Code</a>
+        <a href="https://github.com/ostehost/vs-code-extension" class="btn btn-secondary">Source on GitHub</a>
+      </div>
+      <div class="hero-screenshot">
+        <img src="assets/hero-shot.png" alt="Command Central showing git changes grouped by time period" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- The idea -->
+  <section class="idea">
+    <div class="container">
+      <p class="idea-text">You step away for a few hours, come back, and VS Code shows 40 changed files in alphabetical order. Not very helpful when the question is <em>"what happened while I was gone?"</em></p>
+      <p class="idea-text">Command Central answers that. Changes grouped by when they happened — that's it.</p>
+    </div>
+  </section>
+
+  <!-- What it does -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">📅</div>
+          <h3>Time-based grouping</h3>
+          <p>Today, Yesterday, Last 7 Days. Your changes organized the way you actually think about them.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🗑️</div>
+          <h3>Deleted file tracking</h3>
+          <p>VS Code's Source Control forgets deleted files. Command Central doesn't — you see what was removed and when.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📂</div>
+          <h3>Multi-workspace</h3>
+          <p>Up to 10 folders, each with its own isolated change tracking. Works the way multi-root workspaces should.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works with -->
+  <section class="works-with">
+    <div class="container">
+      <p class="quiet-note">Works with Cursor, Claude Code, Copilot, or just plain coding. No setup needed — if you have git, you're good.</p>
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="coming-soon">
+    <div class="container">
+      <h2>What's coming next</h2>
+      <div class="roadmap-grid">
+        <div class="roadmap-card">
+          <div class="roadmap-tag">v0.2.0</div>
+          <h3>Live Mode</h3>
+          <p>Watch changes appear in real time as you (or your AI agent) work. "Just now" and "Last 5 min" time groups, plus a status bar summary.</p>
+        </div>
+        <div class="roadmap-card">
+          <div class="roadmap-tag">v0.3.0</div>
+          <h3>Agent Awareness</h3>
+          <p>See which changes came from you and which came from an AI agent. Color-coded by git author, with conflict early warnings.</p>
+        </div>
+        <div class="roadmap-card">
+          <div class="roadmap-tag">v0.4.0</div>
+          <h3>Structural Safety</h3>
+          <p>Integration with DiffGuard — catch the subtle breaking changes that pass code review. Alerts right in your sidebar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stay Connected -->
+  <section class="stay-connected">
+    <div class="container">
+      <h2>Stay in the loop</h2>
+      <p class="quiet-note">Get a short email when new versions ship. No spam, no cadence — just release notes when there's something worth sharing.</p>
+      <div class="email-form">
+        <!-- Buttondown form — update action URL with your Buttondown username -->
+        <form action="https://buttondown.com/api/emails/embed-subscribe/ostehost" method="post" target="popupwindow" class="signup-form">
+          <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Notify me when v0.2.0 drops</button>
+        </form>
+        <p class="form-note">Or just <a href="https://github.com/ostehost/vs-code-extension">watch the repo</a> — GitHub will notify you on new releases too.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiet CTA -->
+  <section class="quiet-cta">
+    <div class="container">
+      <p>Free, MIT licensed, 640 tests passing. <a href="https://marketplace.visualstudio.com/items?itemName=oste.command-central">Give it a try.</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      Built by <a href="https://github.com/ostehost">ostehost</a>
+      <span>·</span> MIT License
+      <span>·</span> <a href="https://github.com/ostehost/vs-code-extension">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>
