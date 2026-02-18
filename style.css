@@ -112,6 +112,9 @@ a:hover {
 
 .hero-screenshot {
   margin-top: 56px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-screenshot img {
