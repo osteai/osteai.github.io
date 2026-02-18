@@ -61,37 +61,37 @@
   <text x="20" y="47" class="hero-accent" font-size="10" font-weight="600">▾ Today</text>
   <text x="68" y="47" class="hero-muted" font-size="9">(7 files)</text>
   <rect x="0" y="54" width="400" height="20" fill="transparent"/><rect x="0" y="54" width="400" height="20" fill="#161b22"/>
-  <rect x="22" y="55" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="65.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+  <g transform="translate(22,53) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
   <text x="44" y="67" class="hero-bright hero-mono" font-size="10">auth.service.ts</text>
   <text x="280" y="67" class="hero-muted" font-size="8" text-anchor="end">2h ago · src/auth</text>
   <text x="380" y="67" fill="#d29922" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">M</text>
   <rect x="0" y="74" width="400" height="20" fill="#1c2128"/>
-  <rect x="22" y="75" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="85.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+  <g transform="translate(22,73) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
   <text x="44" y="87" class="hero-bright hero-mono" font-size="10">user.controller.ts</text>
   <text x="280" y="87" class="hero-muted" font-size="8" text-anchor="end">3h ago · src/api</text>
   <text x="380" y="87" fill="#d29922" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">M</text>
   <rect x="0" y="94" width="400" height="20" fill="#161b22"/>
-  <rect x="22" y="95" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="30" y="105.5" fill="#cbcb41" font-size="9" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text>
+  <g transform="translate(22,93) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="8" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text></g>
   <text x="44" y="107" class="hero-bright hero-mono" font-size="10">package.json</text>
   <text x="280" y="107" class="hero-muted" font-size="8" text-anchor="end">4h ago · root</text>
   <text x="380" y="107" fill="#d29922" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">M</text>
   <rect x="0" y="114" width="400" height="20" fill="#1c2128"/>
-  <rect x="22" y="115" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="125.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+  <g transform="translate(22,113) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
   <text x="44" y="127" class="hero-bright hero-mono" font-size="10">db.migration.ts</text>
   <text x="280" y="127" class="hero-muted" font-size="8" text-anchor="end">5h ago · src/db</text>
   <text x="380" y="127" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">A</text>
   <rect x="0" y="134" width="400" height="20" fill="#161b22"/>
-  <rect x="22" y="135" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="30" y="145.5" fill="#cbcb41" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">JS</text>
+  <g transform="translate(22,133) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">JS</text></g>
   <text x="44" y="147" class="hero-bright hero-mono" font-size="10">webpack.config.js</text>
   <text x="280" y="147" class="hero-muted" font-size="8" text-anchor="end">6h ago · root</text>
   <text x="380" y="147" fill="#d29922" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">M</text>
   <rect x="0" y="154" width="400" height="20" fill="#1c2128"/>
-  <rect x="22" y="155" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="165.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+  <g transform="translate(22,153) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
   <text x="44" y="167" class="hero-bright hero-mono" font-size="10">index.ts</text>
   <text x="280" y="167" class="hero-muted" font-size="8" text-anchor="end">7h ago · src</text>
   <text x="380" y="167" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">U</text>
   <rect x="0" y="174" width="400" height="20" fill="#161b22"/>
-  <rect x="22" y="175" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="185.5" fill="#519aba" font-size="7" font-weight="700" font-family="system-ui" text-anchor="middle">MD</text>
+  <g transform="translate(22,173) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="6" font-weight="600" font-family="system-ui" text-anchor="middle">MD</text></g>
   <text x="44" y="187" class="hero-bright hero-mono" font-size="10">README.md</text>
   <text x="280" y="187" class="hero-muted" font-size="8" text-anchor="end">8h ago · root</text>
   <text x="380" y="187" fill="#d29922" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">M</text>
@@ -99,17 +99,17 @@
   <text x="20" y="213" class="hero-accent" font-size="10" font-weight="600">▾ Yesterday</text>
   <text x="88" y="213" class="hero-muted" font-size="9">(3 files)</text>
   <rect x="0" y="220" width="400" height="20" fill="#161b22"/>
-  <rect x="22" y="221" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="231.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+  <g transform="translate(22,219) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
   <text x="44" y="233" class="hero-bright hero-mono" font-size="10">logger.service.ts</text>
   <text x="280" y="233" class="hero-muted" font-size="8" text-anchor="end">yesterday · src/core</text>
   <text x="380" y="233" fill="#f85149" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">D</text>
   <rect x="0" y="240" width="400" height="20" fill="#1c2128"/>
-  <rect x="22" y="241" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="30" y="251.5" fill="#cbcb41" font-size="9" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text>
+  <g transform="translate(22,239) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="8" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text></g>
   <text x="44" y="253" class="hero-bright hero-mono" font-size="10">tsconfig.json</text>
   <text x="280" y="253" class="hero-muted" font-size="8" text-anchor="end">yesterday · root</text>
   <text x="380" y="253" fill="#d29922" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">M</text>
   <rect x="0" y="260" width="400" height="20" fill="#161b22"/>
-  <rect x="22" y="261" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="30" y="271.5" fill="#cbcb41" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">JS</text>
+  <g transform="translate(22,259) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">JS</text></g>
   <text x="44" y="273" class="hero-bright hero-mono" font-size="10">jest.config.js</text>
   <text x="280" y="273" class="hero-muted" font-size="8" text-anchor="end">yesterday · root</text>
   <text x="380" y="273" fill="#d29922" font-size="9" font-weight="700" text-anchor="end" font-family="monospace">M</text>
@@ -188,25 +188,25 @@
   <text x="20" y="46" fill="#58a6ff" font-family="system-ui" font-size="10" font-weight="600">▾ Today</text>
   <text x="64" y="46" fill="#8b949e" font-family="system-ui" font-size="9">(5 files)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
-    <rect x="22" y="54" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="64.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,52) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="65" fill="#e6edf3">auth.service.ts</text>
     <text x="340" y="65" fill="#8b949e" font-size="8" text-anchor="end">2h · src/auth</text>
     <text x="380" y="65" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
     <rect x="0" y="70" width="400" height="18" fill="#1c2128" opacity="0.5"/>
-    <rect x="22" y="71" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="81.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,69) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="82" fill="#e6edf3">user.controller.ts</text>
     <text x="340" y="82" fill="#8b949e" font-size="8" text-anchor="end">3h · src/api</text>
     <text x="380" y="82" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
-    <rect x="22" y="89" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="30" y="99.5" fill="#cbcb41" font-size="9" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text>
+    <g transform="translate(22,87) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="8" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text></g>
     <text x="42" y="100" fill="#e6edf3">package.json</text>
     <text x="340" y="100" fill="#8b949e" font-size="8" text-anchor="end">4h · root</text>
     <text x="380" y="100" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
     <rect x="0" y="106" width="400" height="18" fill="#1c2128" opacity="0.5"/>
-    <rect x="22" y="107" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="117.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,105) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="118" fill="#e6edf3">db.migration.ts</text>
     <text x="340" y="118" fill="#8b949e" font-size="8" text-anchor="end">5h · src/db</text>
     <text x="380" y="118" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">A</text>
-    <rect x="22" y="125" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="30" y="135.5" fill="#cbcb41" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">JS</text>
+    <g transform="translate(22,123) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">JS</text></g>
     <text x="42" y="136" fill="#e6edf3">webpack.config.js</text>
     <text x="340" y="136" fill="#8b949e" font-size="8" text-anchor="end">6h · root</text>
     <text x="380" y="136" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
@@ -215,16 +215,16 @@
   <text x="20" y="164" fill="#58a6ff" font-family="system-ui" font-size="10" font-weight="600">▾ Yesterday</text>
   <text x="84" y="164" fill="#8b949e" font-family="system-ui" font-size="9">(3 files)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
-    <rect x="22" y="172" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="182.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,170) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="183" fill="#e6edf3">logger.service.ts</text>
     <text x="340" y="183" fill="#8b949e" font-size="8" text-anchor="end">1d · src/core</text>
     <text x="380" y="183" fill="#f85149" font-size="9" font-weight="700" text-anchor="end">D</text>
     <rect x="0" y="188" width="400" height="18" fill="#1c2128" opacity="0.5"/>
-    <rect x="22" y="189" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="30" y="199.5" fill="#cbcb41" font-size="9" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text>
+    <g transform="translate(22,187) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="8" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text></g>
     <text x="42" y="200" fill="#e6edf3">tsconfig.json</text>
     <text x="340" y="200" fill="#8b949e" font-size="8" text-anchor="end">1d · root</text>
     <text x="380" y="200" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
-    <rect x="22" y="207" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="30" y="217.5" fill="#cbcb41" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">JS</text>
+    <g transform="translate(22,205) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">JS</text></g>
     <text x="42" y="218" fill="#e6edf3">jest.config.js</text>
     <text x="340" y="218" fill="#8b949e" font-size="8" text-anchor="end">1d · root</text>
     <text x="380" y="218" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
@@ -264,16 +264,16 @@
   <text x="30" y="47" fill="#58a6ff" font-family="system-ui" font-size="10" font-weight="600">▾ api-server</text>
   <text x="114" y="47" fill="#8b949e" font-family="system-ui" font-size="9">(5 files)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
-    <rect x="28" y="56" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="36" y="66.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(28,54) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="48" y="67" fill="#e6edf3">auth.service.ts</text>
     <text x="340" y="67" fill="#8b949e" font-size="8" text-anchor="end">2h · src/auth</text>
     <text x="380" y="67" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
     <rect x="0" y="72" width="400" height="18" fill="#1c2128" opacity="0.4"/>
-    <rect x="28" y="73" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="36" y="83.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(28,71) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="48" y="84" fill="#e6edf3">user.controller.ts</text>
     <text x="340" y="84" fill="#8b949e" font-size="8" text-anchor="end">3h · src/api</text>
     <text x="380" y="84" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
-    <rect x="28" y="91" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="36" y="101.5" fill="#cbcb41" font-size="9" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text>
+    <g transform="translate(28,89) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="8" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text></g>
     <text x="48" y="102" fill="#e6edf3">package.json</text>
     <text x="340" y="102" fill="#8b949e" font-size="8" text-anchor="end">4h · root</text>
     <text x="380" y="102" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
@@ -284,21 +284,21 @@
   <text x="30" y="145" fill="#58a6ff" font-family="system-ui" font-size="10" font-weight="600">▾ frontend-app</text>
   <text x="124" y="145" fill="#8b949e" font-family="system-ui" font-size="9">(4 files)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
-    <rect x="28" y="154" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="36" y="164.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(28,152) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="48" y="165" fill="#e6edf3">App.tsx</text>
     <text x="340" y="165" fill="#8b949e" font-size="8" text-anchor="end">1h · src</text>
     <text x="380" y="165" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
     <rect x="0" y="170" width="400" height="18" fill="#1c2128" opacity="0.4"/>
-    <rect x="28" y="171" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="36" y="181.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(28,169) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="48" y="182" fill="#e6edf3">useAuth.hook.ts</text>
     <text x="340" y="182" fill="#8b949e" font-size="8" text-anchor="end">2h · src/hooks</text>
     <text x="380" y="182" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">A</text>
-    <rect x="28" y="189" width="16" height="14" rx="3" fill="#42b883" opacity="0.2"/><text x="36" y="199.5" fill="#42b883" font-size="7" font-weight="700" font-family="system-ui" text-anchor="middle">CSS</text>
+    <g transform="translate(28,187) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#42b883" opacity="0.15" stroke="#42b883" stroke-width="0.5"/><text x="10" y="14" fill="#42b883" font-size="6" font-weight="600" font-family="system-ui" text-anchor="middle">CSS</text></g>
     <text x="48" y="200" fill="#e6edf3">globals.css</text>
     <text x="340" y="200" fill="#8b949e" font-size="8" text-anchor="end">3h · src/styles</text>
     <text x="380" y="200" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
     <rect x="0" y="206" width="400" height="18" fill="#1c2128" opacity="0.4"/>
-    <rect x="28" y="207" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="36" y="217.5" fill="#cbcb41" font-size="9" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text>
+    <g transform="translate(28,205) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="8" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text></g>
     <text x="48" y="218" fill="#e6edf3">tailwind.config.js</text>
     <text x="340" y="218" fill="#8b949e" font-size="8" text-anchor="end">1d · root</text>
     <text x="380" y="218" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
@@ -308,12 +308,12 @@
   <text x="30" y="247" fill="#58a6ff" font-family="system-ui" font-size="10" font-weight="600">▾ shared-lib</text>
   <text x="108" y="247" fill="#8b949e" font-family="system-ui" font-size="9">(2 files)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
-    <rect x="28" y="256" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="36" y="266.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(28,254) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="48" y="267" fill="#e6edf3">types.d.ts</text>
     <text x="340" y="267" fill="#8b949e" font-size="8" text-anchor="end">6h · src</text>
     <text x="380" y="267" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
     <rect x="0" y="272" width="400" height="18" fill="#1c2128" opacity="0.4"/>
-    <rect x="28" y="273" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="36" y="283.5" fill="#cbcb41" font-size="9" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text>
+    <g transform="translate(28,271) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="8" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text></g>
     <text x="48" y="284" fill="#e6edf3">package.json</text>
     <text x="340" y="284" fill="#8b949e" font-size="8" text-anchor="end">1d · root</text>
     <text x="380" y="284" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
@@ -325,8 +325,8 @@
       <div class="feature-row feature-row--reverse">
         <div class="feature-text">
           <div class="feature-icon">🔀</div>
-          <h3>See what changed — and when</h3>
-          <p>Group by staged and unstaged, or by time period. Files always stay in chronological order within each group.</p>
+          <h3>Sorted by time. Even in staged view.</h3>
+          <p>Switch to git status grouping — staged, modified, untracked — and your files stay sorted by when you changed them. No other SCM panel does this.</p>
         </div>
         <div class="feature-img">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="auto">
@@ -335,72 +335,66 @@
   <rect x="0" y="14" width="400" height="14" fill="#21262d"/>
   <text x="12" y="18" fill="#e6edf3" font-family="system-ui" font-size="10" font-weight="600" letter-spacing="1.5">COMMAND CENTRAL</text>
   <text x="388" y="18" fill="#8b949e" font-family="system-ui" font-size="9" text-anchor="end">Group: Git Status</text>
-
-  <!-- Staged -->
   <rect x="0" y="32" width="400" height="20" fill="#1c2128"/>
-  <text x="20" y="46" fill="#3fb950" font-family="system-ui" font-size="10" font-weight="600">▾ Staged</text>
-  <text x="72" y="46" fill="#8b949e" font-family="system-ui" font-size="9">· 3 ready to commit</text>
-
+  <text x="20" y="46" fill="#3fb950" font-family="system-ui" font-size="10" font-weight="600">▾ Staged Changes</text>
+  <text x="130" y="46" fill="#8b949e" font-family="system-ui" font-size="9">(3 files)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
-    <rect x="22" y="54" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="64.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,52) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="65" fill="#e6edf3">auth.service.ts</text>
     <text x="340" y="65" fill="#8b949e" font-size="8" text-anchor="end">2h · src/auth</text>
     <text x="380" y="65" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">A</text>
-
     <rect x="0" y="70" width="400" height="18" fill="#1c2128" opacity="0.5"/>
-    <rect x="22" y="72" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="82.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,69) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="82" fill="#e6edf3">db.migration.ts</text>
     <text x="340" y="82" fill="#8b949e" font-size="8" text-anchor="end">5h · src/db</text>
     <text x="380" y="82" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">A</text>
-
-    <rect x="22" y="90" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="100.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,87) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="100" fill="#e6edf3">schema.types.ts</text>
     <text x="340" y="100" fill="#8b949e" font-size="8" text-anchor="end">5d · src/types</text>
     <text x="380" y="100" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">A</text>
   </g>
-
-  <!-- Working -->
   <rect x="0" y="114" width="400" height="20" fill="#1c2128"/>
-  <text x="20" y="128" fill="#d29922" font-family="system-ui" font-size="10" font-weight="600">▾ Working</text>
-  <text x="82" y="128" fill="#8b949e" font-family="system-ui" font-size="9">· 7 files changed</text>
-
-  <!-- Today sub-group -->
-  <rect x="0" y="134" width="400" height="18" fill="transparent"/>
-  <text x="32" y="147" fill="#58a6ff" font-family="system-ui" font-size="9" font-weight="600">▾ Today</text>
-  <text x="72" y="147" fill="#8b949e" font-family="system-ui" font-size="8">(4 files)</text>
-
+  <text x="20" y="128" fill="#d29922" font-family="system-ui" font-size="10" font-weight="600">▾ Modified</text>
+  <text x="82" y="128" fill="#8b949e" font-family="system-ui" font-size="9">(7 files)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
+    <g transform="translate(22,134) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
+    <text x="42" y="147" fill="#e6edf3">user.controller.ts</text>
+    <text x="340" y="147" fill="#8b949e" font-size="8" text-anchor="end">3h · src/api</text>
+    <text x="380" y="147" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
     <rect x="0" y="152" width="400" height="18" fill="#1c2128" opacity="0.5"/>
-    <rect x="32" y="154" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="40" y="164.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
-    <text x="52" y="164" fill="#e6edf3">user.controller.ts</text>
-    <text x="340" y="164" fill="#8b949e" font-size="8" text-anchor="end">3h · src/api</text>
+    <g transform="translate(22,151) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="8" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text></g>
+    <text x="42" y="164" fill="#e6edf3">package.json</text>
+    <text x="340" y="164" fill="#8b949e" font-size="8" text-anchor="end">4h · root</text>
     <text x="380" y="164" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
-
-    <rect x="32" y="172" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="40" y="182.5" fill="#cbcb41" font-size="9" font-weight="400" font-family="system-ui" text-anchor="middle">{}</text>
-    <text x="52" y="182" fill="#e6edf3">package.json</text>
-    <text x="340" y="182" fill="#8b949e" font-size="8" text-anchor="end">4h · root</text>
+    <g transform="translate(22,169) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#cbcb41" opacity="0.15" stroke="#cbcb41" stroke-width="0.5"/><text x="10" y="14" fill="#cbcb41" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">JS</text></g>
+    <text x="42" y="182" fill="#e6edf3">webpack.config.js</text>
+    <text x="340" y="182" fill="#8b949e" font-size="8" text-anchor="end">6h · root</text>
     <text x="380" y="182" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
-
     <rect x="0" y="188" width="400" height="18" fill="#1c2128" opacity="0.5"/>
-    <rect x="32" y="190" width="16" height="14" rx="3" fill="#cbcb41" opacity="0.2"/><text x="40" y="200.5" fill="#cbcb41" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">JS</text>
-    <text x="52" y="200" fill="#e6edf3">webpack.config.js</text>
-    <text x="340" y="200" fill="#8b949e" font-size="8" text-anchor="end">6h · root</text>
+    <g transform="translate(22,187) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="6" font-weight="600" font-family="system-ui" text-anchor="middle">MD</text></g>
+    <text x="42" y="200" fill="#e6edf3">README.md</text>
+    <text x="340" y="200" fill="#8b949e" font-size="8" text-anchor="end">8h · root</text>
     <text x="380" y="200" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
-
-    <rect x="32" y="208" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="40" y="218.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
-    <text x="52" y="218" fill="#e6edf3">index.ts</text>
-    <text x="340" y="218" fill="#8b949e" font-size="8" text-anchor="end">7h · src</text>
-    <text x="380" y="218" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">U</text>
+    <text x="42" y="218" fill="#8b949e" font-size="9">+ 3 more files</text>
   </g>
-
-  <!-- Collapsed sub-groups -->
-  <rect x="0" y="228" width="400" height="18" fill="#1c2128" opacity="0.5"/>
-  <text x="32" y="241" fill="#8b949e" font-family="system-ui" font-size="9" font-weight="600">▸ Yesterday</text>
-  <text x="98" y="241" fill="#8b949e" font-family="system-ui" font-size="8">(2 files)</text>
-
-  <rect x="0" y="248" width="400" height="18" fill="transparent"/>
-  <text x="32" y="261" fill="#8b949e" font-family="system-ui" font-size="9" font-weight="600">▸ Last Week</text>
-  <text x="98" y="261" fill="#8b949e" font-family="system-ui" font-size="8">(1 file)</text>
+  <rect x="0" y="228" width="400" height="20" fill="#1c2128"/>
+  <text x="20" y="242" fill="#f85149" font-family="system-ui" font-size="10" font-weight="600">▾ Deleted</text>
+  <text x="74" y="242" fill="#8b949e" font-family="system-ui" font-size="9">(1 file)</text>
+  <g font-family="'Cascadia Code', monospace" font-size="10">
+    <g transform="translate(22,248) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
+    <text x="42" y="261" fill="#e6edf3" text-decoration="line-through">logger.service.ts</text>
+    <text x="340" y="261" fill="#8b949e" font-size="8" text-anchor="end">1d · src/core</text>
+    <text x="380" y="261" fill="#f85149" font-size="9" font-weight="700" text-anchor="end">D</text>
+  </g>
+  <rect x="0" y="276" width="400" height="20" fill="#1c2128"/>
+  <text x="20" y="290" fill="#8b949e" font-family="system-ui" font-size="10" font-weight="600">▾ Untracked</text>
+  <text x="88" y="290" fill="#8b949e" font-family="system-ui" font-size="9">(2 files)</text>
+  <g font-family="'Cascadia Code', monospace" font-size="10">
+    <g transform="translate(22,294) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
+    <text x="42" y="307" fill="#e6edf3">index.ts</text>
+    <text x="340" y="307" fill="#8b949e" font-size="8" text-anchor="end">7h · src</text>
+    <text x="380" y="307" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">U</text>
+  </g>
 </svg>
         </div>
       </div>
@@ -425,21 +419,21 @@
   <text x="20" y="70" fill="#58a6ff" font-family="system-ui" font-size="10" font-weight="600">▾ Today</text>
   <text x="64" y="70" fill="#8b949e" font-family="system-ui" font-size="9">(4 files)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
-    <rect x="22" y="78" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="88.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,76) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="89" fill="#e6edf3">auth.service.ts</text>
     <text x="340" y="89" fill="#8b949e" font-size="8" text-anchor="end">2h · src/auth</text>
     <text x="380" y="89" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
     <rect x="0" y="94" width="400" height="18" fill="#1c2128" opacity="0.5"/>
-    <rect x="22" y="95" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="105.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,93) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="106" fill="#e6edf3">user.controller.ts</text>
     <text x="340" y="106" fill="#8b949e" font-size="8" text-anchor="end">3h · src/api</text>
     <text x="380" y="106" fill="#d29922" font-size="9" font-weight="700" text-anchor="end">M</text>
-    <rect x="22" y="113" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="123.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,111) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="124" fill="#e6edf3">db.migration.ts</text>
     <text x="340" y="124" fill="#8b949e" font-size="8" text-anchor="end">5h · src/db</text>
     <text x="380" y="124" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">A</text>
     <rect x="0" y="130" width="400" height="18" fill="#1c2128" opacity="0.5"/>
-    <rect x="22" y="131" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="141.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,129) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="142" fill="#e6edf3">index.ts</text>
     <text x="340" y="142" fill="#8b949e" font-size="8" text-anchor="end">7h · src</text>
     <text x="380" y="142" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">U</text>
@@ -448,7 +442,7 @@
   <text x="20" y="170" fill="#58a6ff" font-family="system-ui" font-size="10" font-weight="600">▾ Yesterday</text>
   <text x="84" y="170" fill="#8b949e" font-family="system-ui" font-size="9">(1 file)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
-    <rect x="22" y="178" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="188.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,176) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="189" fill="#e6edf3">logger.service.ts</text>
     <text x="340" y="189" fill="#8b949e" font-size="8" text-anchor="end">1d · src/core</text>
     <text x="380" y="189" fill="#f85149" font-size="9" font-weight="700" text-anchor="end">D</text>
@@ -457,7 +451,7 @@
   <text x="20" y="218" fill="#58a6ff" font-family="system-ui" font-size="10" font-weight="600">▾ Last Week</text>
   <text x="94" y="218" fill="#8b949e" font-family="system-ui" font-size="9">(1 file)</text>
   <g font-family="'Cascadia Code', monospace" font-size="10">
-    <rect x="22" y="226" width="16" height="14" rx="3" fill="#519aba" opacity="0.2"/><text x="30" y="236.5" fill="#519aba" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">TS</text>
+    <g transform="translate(22,224) scale(0.7)"><path d="M3,1 L13,1 L17,5 L17,19 L3,19 Z" fill="#519aba" opacity="0.15" stroke="#519aba" stroke-width="0.5"/><text x="10" y="14" fill="#519aba" font-size="7" font-weight="600" font-family="system-ui" text-anchor="middle">TS</text></g>
     <text x="42" y="237" fill="#e6edf3">schema.types.ts</text>
     <text x="340" y="237" fill="#8b949e" font-size="8" text-anchor="end">5d · src/types</text>
     <text x="380" y="237" fill="#3fb950" font-size="9" font-weight="700" text-anchor="end">A</text>
