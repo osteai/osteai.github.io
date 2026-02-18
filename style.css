@@ -218,63 +218,37 @@ body {
   box-shadow: 0 8px 32px rgba(0,0,0,0.25);
 }
 
-/* ─── Features (merged cards + walkthrough) ─── */
+/* ─── Features (3-column grid) ─── */
 .features {
   padding: 80px 0;
   border-top: 1px solid var(--border);
 }
 
-.feature-row {
+.features-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 48px;
-  align-items: center;
-  margin-bottom: 72px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.feature-row:last-child {
-  margin-bottom: 0;
+.feature-card {
+  text-align: center;
 }
 
-.feature-row--reverse {
-  grid-template-columns: 1.2fr 1fr;
-}
-
-.feature-row--reverse .feature-text {
-  order: 2;
-}
-
-.feature-row--reverse .feature-img {
-  order: 1;
-}
-
-.feature-icon {
-  font-size: 1.4rem;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(88, 166, 255, 0.08);
-  border-radius: 8px;
-  margin-bottom: 14px;
-}
-
-.feature-text h3 {
-  font-size: 1.3rem;
+.feature-card h3 {
+  font-size: 1.125rem;
   font-weight: 600;
-  color: var(--text-bright);
-  margin-bottom: 12px;
-  line-height: 1.35;
+  margin-bottom: 0.5rem;
+  color: #e6edf3;
 }
 
-.feature-text p {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  line-height: 1.7;
+.feature-card p {
+  font-size: 0.9375rem;
+  color: #8b949e;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-.feature-text code {
+.feature-card code {
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -283,14 +257,12 @@ body {
   color: var(--accent);
 }
 
-.feature-img img,
-.feature-img svg {
+.feature-card-img svg {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
 }
 
 /* ─── Compatibility ─── */
@@ -607,19 +579,9 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .feature-row,
-  .feature-row--reverse {
+  .features-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .feature-row--reverse .feature-text,
-  .feature-row--reverse .feature-img {
-    order: unset;
-  }
-
-  .feature-row {
-    margin-bottom: 56px;
+    gap: 2.5rem;
   }
 
   .btn {
