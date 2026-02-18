@@ -227,34 +227,33 @@ a:hover {
   box-shadow: 0 8px 32px rgba(0,0,0,0.25);
 }
 
-/* ─── Features (3-column grid) ─── */
+/* ─── Features (stacked cards) ─── */
 .features {
-  padding: 80px 0;
+  padding: 64px 0;
   border-top: 1px solid var(--border);
 }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+.feature-card {
+  margin-bottom: 64px;
 }
 
-.feature-card {
-  text-align: center;
+.feature-card:last-child {
+  margin-bottom: 0;
 }
 
 .feature-card h3 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #e6edf3;
+  color: var(--text-bright, #e6edf3);
+  margin-bottom: 8px;
 }
 
 .feature-card p {
-  font-size: 0.9375rem;
-  color: #8b949e;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--text-muted, #8b949e);
+  line-height: 1.6;
+  max-width: 540px;
+  margin-bottom: 24px;
 }
 
 .feature-card code {
@@ -264,6 +263,10 @@ a:hover {
   padding: 1px 6px;
   font-size: 0.85rem;
   color: var(--accent);
+}
+
+.feature-card-img {
+  max-width: 600px;
 }
 
 .feature-card-img svg {
@@ -597,11 +600,6 @@ a:hover {
 
   .roadmap-grid {
     grid-template-columns: 1fr;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
   }
 
   .btn {
