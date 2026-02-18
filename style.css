@@ -1,4 +1,4 @@
-/* Command Central Landing Page */
+/* Command Central Landing Page v2 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -13,6 +13,8 @@
   --text-muted: #8b949e;
   --accent: #58a6ff;
   --accent-hover: #79b8ff;
+  --green: #3fb950;
+  --red: #f85149;
 }
 
 html { scroll-behavior: smooth; }
@@ -31,7 +33,7 @@ body {
   padding: 0 24px;
 }
 
-/* Hero — understated */
+/* ─── Hero ─── */
 .hero {
   padding: 120px 0 80px;
   text-align: center;
@@ -60,7 +62,7 @@ body {
 .hero .subtitle {
   font-size: clamp(0.95rem, 2vw, 1.1rem);
   color: var(--text-muted);
-  max-width: 560px;
+  max-width: 580px;
   margin: 0 auto 40px;
   line-height: 1.7;
 }
@@ -110,24 +112,59 @@ body {
   box-shadow: 0 16px 48px rgba(0,0,0,0.3);
 }
 
-/* The idea — conversational */
-.idea {
-  padding: 72px 0;
+/* ─── Before / After ─── */
+.before-after {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+}
+
+.before-after h2 {
   text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 40px;
 }
 
-.idea-text {
-  color: var(--text-muted);
-  max-width: 540px;
-  margin: 0 auto 16px;
-  font-size: 1.05rem;
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
 
-.idea-text:last-child { margin-bottom: 0; }
+.comparison-panel {
+  position: relative;
+}
 
-.idea-text em { color: var(--text); font-style: normal; }
+.comparison-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
 
-/* Features — clean cards */
+.comparison-label--before {
+  color: var(--red);
+  background: rgba(248, 81, 73, 0.1);
+}
+
+.comparison-label--after {
+  color: var(--green);
+  background: rgba(63, 185, 80, 0.1);
+}
+
+.comparison-panel img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+/* ─── Feature Cards ─── */
 .features {
   padding: 64px 0;
 }
@@ -163,26 +200,83 @@ body {
   line-height: 1.6;
 }
 
-/* Works with — quiet */
-.works-with {
-  padding: 48px 0;
-  text-align: center;
+/* ─── Walkthrough ─── */
+.walkthrough {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
 }
 
-.quiet-note {
+.walkthrough-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.walkthrough-row:last-child {
+  margin-bottom: 0;
+}
+
+.walkthrough-row--reverse {
+  direction: rtl;
+}
+
+.walkthrough-row--reverse > * {
+  direction: ltr;
+}
+
+.walkthrough-text h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.walkthrough-text p {
   color: var(--text-muted);
   font-size: 0.95rem;
-  max-width: 520px;
-  margin: 0 auto;
+  line-height: 1.7;
 }
 
-.quiet-note a {
+.walkthrough-text code {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.85rem;
   color: var(--accent);
-  text-decoration: none;
 }
-.quiet-note a:hover { text-decoration: underline; }
 
-/* Coming Soon */
+.walkthrough-img img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+/* ─── Compatibility ─── */
+.compatibility {
+  padding: 48px 0;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.compat-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.compat-text strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ─── Coming Soon ─── */
 .coming-soon {
   padding: 80px 0;
   border-top: 1px solid var(--border);
@@ -234,7 +328,7 @@ body {
   line-height: 1.6;
 }
 
-/* Stay Connected */
+/* ─── Stay Connected ─── */
 .stay-connected {
   padding: 80px 0;
   text-align: center;
@@ -247,6 +341,19 @@ body {
   color: var(--text-bright);
   margin-bottom: 12px;
 }
+
+.quiet-note {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.quiet-note a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.quiet-note a:hover { text-decoration: underline; }
 
 .stay-connected .quiet-note {
   margin-bottom: 32px;
@@ -295,7 +402,7 @@ body {
 }
 .form-note a:hover { text-decoration: underline; }
 
-/* Quiet CTA */
+/* ─── Quiet CTA ─── */
 .quiet-cta {
   padding: 64px 0;
   text-align: center;
@@ -314,7 +421,7 @@ body {
 }
 .quiet-cta a:hover { text-decoration: underline; }
 
-/* Footer */
+/* ─── Footer ─── */
 .footer {
   padding: 32px 0;
   border-top: 1px solid var(--border);
@@ -331,7 +438,59 @@ body {
 
 .footer span { margin: 0 8px; }
 
-/* Mobile */
+/* ─── Placeholder Images (replace with real screenshots) ─── */
+.placeholder-img {
+  background: var(--bg-alt);
+  border: 2px dashed var(--border);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.placeholder-hero {
+  min-height: 400px;
+}
+
+.placeholder-compare {
+  min-height: 320px;
+}
+
+.placeholder-walkthrough {
+  min-height: 280px;
+}
+
+.placeholder-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.placeholder-desc {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .comparison {
+    grid-template-columns: 1fr;
+  }
+  .walkthrough-row,
+  .walkthrough-row--reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    direction: ltr;
+  }
+}
+
 @media (max-width: 600px) {
   .hero { padding: 80px 0 60px; }
   .signup-form { flex-direction: column; }

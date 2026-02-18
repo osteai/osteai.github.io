@@ -20,6 +20,32 @@
       autocapture: false
     });
   </script>
+  <!-- Custom event tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Track CTA clicks
+      document.querySelectorAll('[data-track]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          posthog.capture(el.dataset.track, {
+            source: el.dataset.source || 'landing',
+            label: el.textContent.trim()
+          });
+        });
+      });
+      // Track scroll depth
+      var depths = [25, 50, 75, 100];
+      var fired = {};
+      window.addEventListener('scroll', function() {
+        var pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        depths.forEach(function(d) {
+          if (pct >= d && !fired[d]) {
+            fired[d] = true;
+            posthog.capture('scroll_depth', { depth: d });
+          }
+        });
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -27,57 +53,130 @@
   <section class="hero">
     <div class="container">
       <div class="hero-badge">Free &amp; open source</div>
-      <h1>See what changed in your codebase,<br>organized by time</h1>
-      <p class="subtitle">A VS Code extension that groups your git changes into Today, Yesterday, and Last Week — instead of an alphabetical wall of files.</p>
+      <h1>AI edits 40 files.<br>You lose track after 3.</h1>
+      <p class="subtitle">Command Central organizes your git changes by time — Today, Yesterday, Last Week — so you always know what happened while you were away.</p>
       <div class="cta-group">
-        <a href="https://marketplace.visualstudio.com/items?itemName=oste.command-central" class="btn btn-primary">Install for VS Code</a>
-        <a href="https://github.com/ostehost/vs-code-extension" class="btn btn-secondary">Source on GitHub</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=oste.command-central" class="btn btn-primary" data-track="install_click" data-source="hero">Install for VS Code</a>
+        <a href="https://github.com/ostehost/vs-code-extension" class="btn btn-secondary" data-track="github_click" data-source="hero">Source on GitHub</a>
       </div>
       <div class="hero-screenshot">
-        <img src="assets/hero-shot.png" alt="Command Central showing git changes grouped by time period" loading="lazy">
+        <!-- PLACEHOLDER: Replace with tight crop of CC sidebar showing time-grouped tree -->
+        <div class="placeholder-img placeholder-hero">
+          <div class="placeholder-label">Hero Screenshot</div>
+          <div class="placeholder-desc">CC sidebar: Today (7 files) · Yesterday (2 files) · February (3 files)<br>Tight crop — sidebar + thin slice of editor</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- The idea -->
-  <section class="idea">
+  <!-- Before / After -->
+  <section class="before-after">
     <div class="container">
-      <p class="idea-text">You step away for a few hours, come back, and VS Code shows 40 changed files in alphabetical order. Not very helpful when the question is <em>"what happened while I was gone?"</em></p>
-      <p class="idea-text">Command Central answers that. Changes grouped by when they happened — that's it.</p>
+      <h2>The problem is obvious once you see it</h2>
+      <div class="comparison">
+        <div class="comparison-panel">
+          <div class="comparison-label comparison-label--before">After a Copilot session</div>
+          <!-- PLACEHOLDER: VS Code Explorer, flat alphabetical list -->
+          <div class="placeholder-img placeholder-compare">
+            <div class="placeholder-label">Before</div>
+            <div class="placeholder-desc">VS Code Explorer panel — 40+ files in flat alphabetical order. Wall of text. No context.</div>
+          </div>
+        </div>
+        <div class="comparison-panel">
+          <div class="comparison-label comparison-label--after">With Command Central</div>
+          <!-- PLACEHOLDER: CC sidebar, same files grouped by time -->
+          <div class="placeholder-img placeholder-compare">
+            <div class="placeholder-label">After</div>
+            <div class="placeholder-desc">CC sidebar — same files grouped by Today / Yesterday / Last Week. Instant clarity.</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- What it does -->
+  <!-- Feature Cards -->
   <section class="features">
     <div class="container">
       <div class="features-grid">
         <div class="feature-card">
           <div class="icon">📅</div>
-          <h3>Time-based grouping</h3>
-          <p>Today, Yesterday, Last 7 Days. Your changes organized the way you actually think about them.</p>
+          <h3>Time Groups</h3>
+          <p>Files sorted by when they changed: Today, Yesterday, Last Week. Your changes organized the way you actually think about them.</p>
         </div>
         <div class="feature-card">
-          <div class="icon">🗑️</div>
-          <h3>Deleted file tracking</h3>
-          <p>VS Code's Source Control forgets deleted files. Command Central doesn't — you see what was removed and when.</p>
+          <div class="icon">🔍</div>
+          <h3>Extension Filter</h3>
+          <p>Show only .ts files. Or .md. Or .yaml. One keystroke to cut through the noise and see just what matters.</p>
         </div>
         <div class="feature-card">
-          <div class="icon">📂</div>
-          <h3>Multi-workspace</h3>
-          <p>Up to 10 folders, each with its own isolated change tracking. Works the way multi-root workspaces should.</p>
+          <div class="icon">🔀</div>
+          <h3>Git-Aware Grouping</h3>
+          <p>Switch from time view to staged/unstaged view when you're ready to commit. Two ways to see the same changes.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Works with -->
-  <section class="works-with">
+  <!-- Feature Walkthrough -->
+  <section class="walkthrough">
     <div class="container">
-      <p class="quiet-note">Works with Cursor, Claude Code, Copilot, or just plain coding. No setup needed — if you have git, you're good.</p>
+
+      <!-- Extension Filter -->
+      <div class="walkthrough-row">
+        <div class="walkthrough-text">
+          <h3>40 files changed. You only care about TypeScript.</h3>
+          <p>The Extension Filter lets you slice your changes by file type. Working on the API? Show only <code>.ts</code>. Reviewing config changes? Filter to <code>.yaml</code> and <code>.json</code>. One click, instant focus.</p>
+        </div>
+        <div class="walkthrough-img">
+          <!-- PLACEHOLDER: CC sidebar filtered to .ts files only -->
+          <div class="placeholder-img placeholder-walkthrough">
+            <div class="placeholder-label">Extension Filter</div>
+            <div class="placeholder-desc">CC sidebar showing Extension Filter panel with .ts selected. Tree shows only TypeScript files.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Git Status Grouping -->
+      <div class="walkthrough-row walkthrough-row--reverse">
+        <div class="walkthrough-text">
+          <h3>Time view for context. Git view for commits.</h3>
+          <p>Grouping Options let you switch between sorting by time (when did this change?) and grouping by git status (what's staged vs unstaged?). Two lenses on the same codebase.</p>
+        </div>
+        <div class="walkthrough-img">
+          <!-- PLACEHOLDER: CC sidebar in git status mode -->
+          <div class="placeholder-img placeholder-walkthrough">
+            <div class="placeholder-label">Git Status Grouping</div>
+            <div class="placeholder-desc">CC sidebar with Grouping Options showing "Git Status" selected. Tree shows Staged / Unstaged groups.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multi-Workspace -->
+      <div class="walkthrough-row">
+        <div class="walkthrough-text">
+          <h3>10 projects. Each with its own identity.</h3>
+          <p>Track up to 10 workspace folders, each with its own icon, its own change history, its own space. Custom emoji icons aren't just visual flair — they're how you tell your projects apart at a glance.</p>
+        </div>
+        <div class="walkthrough-img">
+          <!-- PLACEHOLDER: Multiple CC workspace panels with emoji icons -->
+          <div class="placeholder-img placeholder-walkthrough">
+            <div class="placeholder-label">Multi-Workspace</div>
+            <div class="placeholder-desc">CC sidebar showing 3 workspaces: 🚀 API Server, 🔧 Shared Lib, ⚡ Web App. Each with its own file tree.</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Coming Soon -->
+  <!-- Compatibility -->
+  <section class="compatibility">
+    <div class="container">
+      <p class="compat-text">Works with <strong>Cursor</strong>, <strong>Claude Code</strong>, <strong>GitHub Copilot</strong>, <strong>Windsurf</strong> — any AI coding tool. Sits in the Activity Bar, Panel, or Secondary Sidebar. No setup needed — if you have git, you're good.</p>
+    </div>
+  </section>
+
+  <!-- Coming Next -->
   <section class="coming-soon">
     <div class="container">
       <h2>What's coming next</h2>
@@ -94,8 +193,8 @@
         </div>
         <div class="roadmap-card">
           <div class="roadmap-tag">v0.4.0</div>
-          <h3>Structural Safety</h3>
-          <p>Integration with DiffGuard — catch the subtle breaking changes that pass code review. Alerts right in your sidebar.</p>
+          <h3>Terminal Integration</h3>
+          <p>Launch project-specific terminals right from Command Central. Each project gets its own Dock icon, its own notification stream. Your workspace icon syncs across your entire workflow.</p>
         </div>
       </div>
     </div>
@@ -107,12 +206,11 @@
       <h2>Stay in the loop</h2>
       <p class="quiet-note">Get a short email when new versions ship. No spam, no cadence — just release notes when there's something worth sharing.</p>
       <div class="email-form">
-        <!-- Buttondown form — update action URL with your Buttondown username -->
         <form action="https://buttondown.com/api/emails/embed-subscribe/ostehost" method="post" target="popupwindow" class="signup-form">
           <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
-          <button type="submit" class="btn btn-primary">Notify me when v0.2.0 drops</button>
+          <button type="submit" class="btn btn-primary" data-track="email_submit" data-source="footer">Notify me when v0.2.0 drops</button>
         </form>
-        <p class="form-note">Or just <a href="https://github.com/ostehost/vs-code-extension">watch the repo</a> — GitHub will notify you on new releases too.</p>
+        <p class="form-note">Or just <a href="https://github.com/ostehost/vs-code-extension" data-track="github_click" data-source="email-section">watch the repo</a> — GitHub will notify you on new releases too.</p>
       </div>
     </div>
   </section>
@@ -120,7 +218,7 @@
   <!-- Quiet CTA -->
   <section class="quiet-cta">
     <div class="container">
-      <p>Free, MIT licensed, 640 tests passing. <a href="https://marketplace.visualstudio.com/items?itemName=oste.command-central">Give it a try.</a></p>
+      <p>Free, MIT licensed, 640 tests passing. <a href="https://marketplace.visualstudio.com/items?itemName=oste.command-central" data-track="install_click" data-source="footer">Give it a try.</a></p>
     </div>
   </section>
 
